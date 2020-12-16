@@ -1,4 +1,7 @@
 - name: first play
+  become: true
+  remote_user: centos
+  become_method: sudo
   hosts: all
   tasks:
     - name: first task to create a user
