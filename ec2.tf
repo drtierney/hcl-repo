@@ -2,11 +2,11 @@ data "aws_ami" "image" {
 
   most_recent = true 
 
-  owners = ["099720109477"] 
+  owners = ["self"] 
 
   tags = { 
 
-    Name = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20201026" 
+    Name = "webserver-image-dec-20" 
 
   } 
 
