@@ -3,7 +3,7 @@ resource "aws_instance" "myawsserver" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "david-instance"
+    Name = "david-instance-2020"
     Env = "test"
     Client = "hcl"
   }
