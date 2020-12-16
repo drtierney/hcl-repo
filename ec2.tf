@@ -9,12 +9,17 @@ data "aws_ami" "image" {
 resource "aws_instance" "myawsserver" {
   ami = data.aws_ami.image.id
   instance_type = "t2.micro"
+  key_name = "david-terraform"
 
   tags = {
     Name = "david-instance-2020"
     Env = "test"
     Client = "hcl"
     Expires = "16-12-20"
+  }
+  
+    provisioner "local-exec" {
+    command = "echo The servers IP address is ${self.public_ip} && echo ${self.public_ip} > /root/inventory"
   }
 }
 
