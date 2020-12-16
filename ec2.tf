@@ -1,8 +1,8 @@
 data "aws_ami" "image" { 
   most_recent = true 
-  owners = ["self"] 
+  owners = ["137112412989"] 
   tags = { 
-    Name = "webserver-image-dec-20" 
+    Name = "amzn2-ami-hvm-2.0.20201126.0-arm64-gp2" 
   }
 } 
 
