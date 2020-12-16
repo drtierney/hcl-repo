@@ -1,3 +1,17 @@
+data "aws_ami" "image" { 
+
+  most_recent = true 
+
+  owners = ["137112412989"] 
+
+  tags = { 
+
+    Name = "ubuntu/images/hvm-ssd/ubuntu-focal-20.04-arm64-server-20201026" 
+
+  } 
+
+} 
+
 resource "aws_instance" "myawsserver" {
   ami = "ami-0603cbe34fd08cb81"
   instance_type = "t2.micro"
