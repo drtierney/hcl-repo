@@ -1,0 +1,7 @@
+- name: first play
+  hosts: all
+  tasks:
+    - name: first task to create a user
+      user:
+        name: david
+        state: present
