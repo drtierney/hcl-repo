@@ -5,6 +5,7 @@ resource "aws_instance" "myawsserver" {
   tags = {
     Name = "david-instance"
     Env = "test"
+    Client = "hcl"
   }
 }
 
