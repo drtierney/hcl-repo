@@ -1,8 +1,8 @@
 data "aws_ami" "image" { 
   most_recent = true 
-  owners = ["137112412989"] 
+  owners = ["679593333241"] 
   tags = { 
-    Name = "amzn2-ami-hvm-2.0.20201126.0-arm64-gp2" 
+    Name = "CentOS Linux 7 x86_64 HVM EBS ENA 2002_01-b7ee8a69-ee97-4a49-9e68-afaee216db2e-ami-0042af67f8e4dcc20.4" 
   }
 } 
 
